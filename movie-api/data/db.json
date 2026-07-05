@@ -1,0 +1,274 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Admin User",
+      "email": "admin@example.com",
+      "password": "admin123",
+      "role": "admin",
+      "createdAt": "2026-07-03T07:12:16.686Z"
+    },
+    {
+      "id": 2,
+      "name": "Test User",
+      "email": "user@example.com",
+      "password": "user123",
+      "role": "user",
+      "createdAt": "2026-07-03T07:12:16.687Z"
+    },
+    {
+      "id": 3,
+      "name": "",
+      "email": "user1@example.com",
+      "password": "121212",
+      "role": "user",
+      "createdAt": "2026-07-05T05:58:48.504Z"
+    },
+    {
+      "id": 4,
+      "name": "",
+      "email": "admin1@example.com",
+      "password": "121212",
+      "role": "admin",
+      "createdAt": "2026-07-05T06:01:53.179Z"
+    }
+  ],
+  "movies": [
+    {
+      "id": 101,
+      "title": "Minions & Monsters",
+      "certificate": "UA7+",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "duration": "1h 30m",
+      "releaseDate": "2026-07-02",
+      "description": "A hilarious adventure where tiny heroes must save the world from giant creatures.",
+      "genres": [
+        "Animation",
+        "Comedy"
+      ],
+      "bannerImage": "https://cdn.district.in/movies-assets/images/cinema/Minions-%26-Monsters-57fd7730-6ba9-11f1-84fa-05ff8282b7b2.jpg?im=Resize,width=400",
+      "backgroundImage": "https://cdn.district.in/movies-assets/images/cinema/Minions-%26-Monsters_Cover-c9270de0-0592-11f1-bb3a-cbf1dee679b8.jpg",
+      "cast": [
+        {
+          "id": 1,
+          "name": "Christoph Waltz",
+          "role": "Voice Actor",
+          "image": "https://cdn.district.in/movies-assets/images/cinema/Stills/downsizing/cast/Christopher-Waltz.jpg?im=Resize,width=184"
+        },
+        {
+          "id": 2,
+          "name": "Jeff Bridges",
+          "role": "Voice Actor",
+          "image": "https://cdn.district.in/movies-assets/images/cinema/Jeff-Bridges-9b2225bf-71bc-4eea-9f6a-4dbcfde5c514.jpg?im=Resize,width=184"
+        },
+        {
+          "id": 3,
+          "name": "Jesse Eisenberg",
+          "role": "Voice Actor",
+          "image": "https://cdn.district.in/movies-assets/images/cinema/jesse-00824c20-d658-11ef-b0b4-a1004a37a2e8.jpg?im=Resize,width=184"
+        },
+        {
+          "id": 4,
+          "name": "Pierre Coffin",
+          "role": "Director",
+          "image": "https://cdn.district.in/movies-assets/images/cinema/Pierre%20Coffin%201-39a6a300-0584-11f1-bb3a-cbf1dee679b8.jpg?im=Resize,width=184"
+        }
+      ]
+    },
+    {
+      "id": 102,
+      "title": "Galaxy Warriors",
+      "certificate": "UA13+",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "duration": "2h 05m",
+      "releaseDate": "2026-08-15",
+      "description": "Elite space soldiers unite to defend humanity from an intergalactic invasion.",
+      "genres": [
+        "Action",
+        "Sci-Fi"
+      ],
+      "bannerImage": "https://cdn.district.in/movies-assets/images/cinema/Minions-%26-Monsters-57fd7730-6ba9-11f1-84fa-05ff8282b7b2.jpg?im=Resize,width=400",
+      "backgroundImage": "https://cdn.district.in/movies-assets/images/cinema/Minions-%26-Monsters_Cover-c9270de0-0592-11f1-bb3a-cbf1dee679b8.jpg",
+      "cast": [
+        {
+          "id": 1,
+          "name": "Christoph Waltz",
+          "role": "Commander",
+          "image": "https://cdn.district.in/movies-assets/images/cinema/Stills/downsizing/cast/Christopher-Waltz.jpg?im=Resize,width=184"
+        },
+        {
+          "id": 2,
+          "name": "Jeff Bridges",
+          "role": "General",
+          "image": "https://cdn.district.in/movies-assets/images/cinema/Jeff-Bridges-9b2225bf-71bc-4eea-9f6a-4dbcfde5c514.jpg?im=Resize,width=184"
+        },
+        {
+          "id": 3,
+          "name": "Jesse Eisenberg",
+          "role": "Pilot",
+          "image": "https://cdn.district.in/movies-assets/images/cinema/jesse-00824c20-d658-11ef-b0b4-a1004a37a2e8.jpg?im=Resize,width=184"
+        },
+        {
+          "id": 4,
+          "name": "Pierre Coffin",
+          "role": "Director",
+          "image": "https://cdn.district.in/movies-assets/images/cinema/Pierre%20Coffin%201-39a6a300-0584-11f1-bb3a-cbf1dee679b8.jpg?im=Resize,width=184"
+        }
+      ]
+    },
+    {
+      "id": 103,
+      "title": "The Last Kingdom",
+      "certificate": "UA13+",
+      "languages": [
+        "English",
+        "French"
+      ],
+      "duration": "2h 20m",
+      "releaseDate": "2026-09-10",
+      "description": "A prince returns from exile to reclaim his kingdom.",
+      "genres": [
+        "Adventure",
+        "Drama"
+      ],
+      "bannerImage": "https://cdn.district.in/movies-assets/images/cinema/Minions-%26-Monsters-57fd7730-6ba9-11f1-84fa-05ff8282b7b2.jpg?im=Resize,width=400",
+      "backgroundImage": "https://cdn.district.in/movies-assets/images/cinema/Minions-%26-Monsters_Cover-c9270de0-0592-11f1-bb3a-cbf1dee679b8.jpg",
+      "cast": []
+    },
+    {
+      "id": 104,
+      "title": "Cyber City",
+      "certificate": "A",
+      "languages": [
+        "English"
+      ],
+      "duration": "2h 11m",
+      "releaseDate": "2026-10-02",
+      "description": "A hacker uncovers a conspiracy threatening the digital world.",
+      "genres": [
+        "Thriller",
+        "Sci-Fi"
+      ],
+      "bannerImage": "https://cdn.district.in/movies-assets/images/cinema/Minions-%26-Monsters-57fd7730-6ba9-11f1-84fa-05ff8282b7b2.jpg?im=Resize,width=400",
+      "backgroundImage": "https://cdn.district.in/movies-assets/images/cinema/Minions-%26-Monsters_Cover-c9270de0-0592-11f1-bb3a-cbf1dee679b8.jpg",
+      "cast": []
+    },
+    {
+      "id": 105,
+      "title": "Ocean Secrets",
+      "certificate": "U",
+      "languages": [
+        "English",
+        "Spanish"
+      ],
+      "duration": "1h 58m",
+      "releaseDate": "2026-11-12",
+      "description": "Divers discover an ancient civilization hidden beneath the sea.",
+      "genres": [
+        "Adventure",
+        "Fantasy"
+      ],
+      "bannerImage": "https://cdn.district.in/movies-assets/images/cinema/Minions-%26-Monsters-57fd7730-6ba9-11f1-84fa-05ff8282b7b2.jpg?im=Resize,width=400",
+      "backgroundImage": "https://cdn.district.in/movies-assets/images/cinema/Minions-%26-Monsters_Cover-c9270de0-0592-11f1-bb3a-cbf1dee679b8.jpg",
+      "cast": []
+    },
+    {
+      "id": 106,
+      "title": "Dark Horizon",
+      "certificate": "UA16+",
+      "languages": [
+        "English"
+      ],
+      "duration": "2h 18m",
+      "releaseDate": "2026-12-20",
+      "description": "Survivors battle mysterious forces after the sun disappears.",
+      "genres": [
+        "Horror",
+        "Mystery"
+      ],
+      "bannerImage": "https://cdn.district.in/movies-assets/images/cinema/Minions-%26-Monsters-57fd7730-6ba9-11f1-84fa-05ff8282b7b2.jpg?im=Resize,width=400",
+      "backgroundImage": "https://cdn.district.in/movies-assets/images/cinema/Minions-%26-Monsters_Cover-c9270de0-0592-11f1-bb3a-cbf1dee679b8.jpg",
+      "cast": []
+    },
+    {
+      "id": 107,
+      "title": "Infinite Race",
+      "certificate": "UA7+",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "duration": "1h 49m",
+      "releaseDate": "2027-01-14",
+      "description": "The fastest racers compete in a tournament that spans continents.",
+      "genres": [
+        "Action",
+        "Sports"
+      ],
+      "bannerImage": "https://cdn.district.in/movies-assets/images/cinema/Minions-%26-Monsters-57fd7730-6ba9-11f1-84fa-05ff8282b7b2.jpg?im=Resize,width=400",
+      "backgroundImage": "https://cdn.district.in/movies-assets/images/cinema/Minions-%26-Monsters_Cover-c9270de0-0592-11f1-bb3a-cbf1dee679b8.jpg",
+      "cast": []
+    },
+    {
+      "id": 108,
+      "title": "Magic Academy",
+      "certificate": "U",
+      "languages": [
+        "English"
+      ],
+      "duration": "2h 01m",
+      "releaseDate": "2027-02-08",
+      "description": "Young magicians discover an ancient spell that changes their destiny.",
+      "genres": [
+        "Fantasy",
+        "Family"
+      ],
+      "bannerImage": "https://cdn.district.in/movies-assets/images/cinema/Minions-%26-Monsters-57fd7730-6ba9-11f1-84fa-05ff8282b7b2.jpg?im=Resize,width=400",
+      "backgroundImage": "https://cdn.district.in/movies-assets/images/cinema/Minions-%26-Monsters_Cover-c9270de0-0592-11f1-bb3a-cbf1dee679b8.jpg",
+      "cast": []
+    },
+    {
+      "id": 110,
+      "title": "Dream Chasers",
+      "certificate": "U",
+      "languages": [
+        "English",
+        "Hindi"
+      ],
+      "duration": "1h 52m",
+      "releaseDate": "2027-04-30",
+      "description": "A group of friends follows impossible dreams despite overwhelming odds.",
+      "genres": [
+        "Drama",
+        "Comedy"
+      ],
+      "bannerImage": "https://cdn.district.in/movies-assets/images/cinema/Minions-%26-Monsters-57fd7730-6ba9-11f1-84fa-05ff8282b7b2.jpg?im=Resize,width=400",
+      "backgroundImage": "https://cdn.district.in/movies-assets/images/cinema/Minions-%26-Monsters_Cover-c9270de0-0592-11f1-bb3a-cbf1dee679b8.jpg",
+      "cast": []
+    },
+    {
+      "id": 111,
+      "title": "Alpha",
+      "certificate": "UA16+",
+      "languages": [
+        "hindi"
+      ],
+      "duration": "2h 5m",
+      "releaseDate": "2026-07-05",
+      "description": "Two women are forced into an unlikely alliance as they confront a ruthless adversary. Pushed to their physical and emotional limits, they navigate a relentless series of confrontations that lead to a brutal final showdown.",
+      "genres": [
+        "Action",
+        "spy"
+      ],
+      "bannerImage": "https://cdn.district.in/movies-assets/images/cinema/Alpha-062ca980-6ef1-11f1-b0b5-2f04c00aa32d.jpg",
+      "backgroundImage": "https://cdn.district.in/movies-assets/images/cinema/_Cover-7277e4d0-6ba2-11f1-9444-c504df2f3dc4.jpg",
+      "cast": []
+    }
+  ]
+}
