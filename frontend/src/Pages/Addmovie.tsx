@@ -4,6 +4,8 @@ import MovieForm from "./MovieForm";
 import type { MovieFormPayload } from "./MovieForm";
 import { useCreateMovie } from "../api/Movies";
 import { useAuth } from "../hooks/useAuth";
+import { useEffect } from "react";
+import { notify } from "../utils/Notification";
  
 export default function AddMovie() {
   const navigate = useNavigate();
@@ -16,17 +18,33 @@ export default function AddMovie() {
   
   const currentUser = getCurrentUser();
 
+  const permission =   Notification.requestPermission();
   
+  useEffect(() => {
+    permission;
+ 
+}, []);
+     
 
   if (!currentUser || !permissions.includes("CREATE") ) {
-    return <h2 className="text-center mt-50 mb-40 text-xl font-semibold">Access denied. Admins only.</h2>;
+    return <h2 className="text-center mt-60 mb-60 text-xl font-semibold">Access denied. Admins only.</h2>;
   }
+
+ 
 
   const handleCreate = (payload: MovieFormPayload) => {
     createMovie.mutate(
       { payload, adminId: currentUser.id },
       {
-        onSuccess: (response) => navigate(`/movies/${response.data.id}`),
+        onSuccess: (response) => {
+          
+          if(!navigator.onLine){
+            notify(response.data.title,"movie is saved offline, waiting for the internet to be sync.");
+            console.log("omg.........")
+            navigate(`/movies`);
+          }
+            // else navigate(`/movies/${response.data.id}`);
+        },
       }
     );
   };

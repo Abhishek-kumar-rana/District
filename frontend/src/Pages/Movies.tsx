@@ -10,10 +10,10 @@ function Movies() {
   const { data, isLoading, error } = useMovies();
 
   console.log("Movies Data:", data);
+  
+  if (isLoading) return <h2 className='h-screen mt-50 text-4xl'>Loading...</h2>;
 
-  if (isLoading) return <h2 className='h-screen mt-30 text-4xl'>Loading...</h2>;
-
-  if (error) return <h2 className='h-screen mt-30 text-4xl'>Something went wrong</h2>;
+  if (error) return <h2 className='h-screen mt-50 text-4xl'>Something went wrong</h2>;
 
   return (
     <>

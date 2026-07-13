@@ -16,7 +16,7 @@ function Movie() {
 
   const { data, isLoading, error } = useMovie(id!);
 
-  console.log(getCurrentUser());
+  // console.log(getCurrentUser());
   
   
 

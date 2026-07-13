@@ -1,4 +1,4 @@
-import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
+import { useMutation,    useQuery,    useQueryClient } from "@tanstack/react-query";
 import { api } from "./axios";
 import type { ApiResponse } from "./Movies.type";
 
@@ -43,10 +43,10 @@ export interface RegisterPayload {
 }
 
 
-export const registerUser = async (
-  payload: RegisterPayload
-): Promise<ApiResponse<User>> => {
-  const response = await api.post("", payload);
+////////   Register
+export const registerUser = async (payload: RegisterPayload): Promise<ApiResponse<User>> => {
+
+  const response = await api.post("/api/users", payload);
   return response.data;
 };
  
@@ -60,6 +60,21 @@ export const useRegisterUser = () => {
   });
 };
 
+
+////////// Get Bookings
+
+ const getBookings = async (id:string|Number|undefined) => {
+    const response = await api.get(`/users/${id}/bookings`);
+    console.log("Movie API Response:", response.data); 
+    return response.data;
+};
+
+export const UseBookings = (id:string|Number|undefined) => {
+    return useQuery({
+        queryKey: ['movies'],
+        queryFn: () => getBookings(id),
+    });
+};  
 
 
 

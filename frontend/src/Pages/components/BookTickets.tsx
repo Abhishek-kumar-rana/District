@@ -3,6 +3,7 @@ import { useBookSeats, useHoldSeats, useReleaseSeats, useSeats } from "../../api
 import { useRef, useState } from "react";
 import { useAuth } from "../../hooks/useAuth";
 import { twMerge } from "tailwind-merge";
+import NoNetwork from "./NoNetwork";
  
 export const BookTickets = () => {
     const { id } = useParams<{ id: string }>();
@@ -147,6 +148,10 @@ export const BookTickets = () => {
                 },
             })
     }
+
+     if (!navigator.onLine) {
+    return <NoNetwork />;
+  }
 
     return (
         <div className=" mt-45 lg:mt-20  ">

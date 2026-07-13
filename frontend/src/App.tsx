@@ -11,6 +11,8 @@ import EditMovie from './Pages/EditMovie'
 import AddMovie from './Pages/Addmovie'
 import { BookTickets } from './Pages/components/BookTickets'
 import Events from './Pages/Events'
+import Stores from './Pages/Stores'
+import Bookings from './Pages/Bookings'
 
 function App() {
  
@@ -28,6 +30,8 @@ function App() {
             <Route path="/movies/new" element={<AddMovie />} />
             <Route path="/movie/:id/booking" element={<BookTickets />} />
             <Route path="/events" element={<Events />} />
+            <Route path="/stores" element={<Stores/>} />
+             <Route path="/bookings" element={<Bookings/>} />
           </Routes>
       
         </Layout>

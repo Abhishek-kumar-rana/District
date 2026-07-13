@@ -25,7 +25,7 @@ export function useAuth() {
         return ["CREATE", "DELETE", "UPDATE"];
 
       case "admin":
-        return ["CREATE", "UPDATE"];
+        return [ "UPDATE"];
 
       default:
         return [];

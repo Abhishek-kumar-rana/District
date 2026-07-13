@@ -26,7 +26,7 @@ export default function Header() {
             return false;
         });
         setIsMenuOpen(false);
-        navigate("/");
+        navigate("/loginSignUp");
     }
 
     const handleStorageChange = () => {
@@ -46,6 +46,10 @@ export default function Header() {
         navigate("/movies/new");
     }
 
+    const handleCLickBookings=()=>{
+        setIsMenuOpen(false);
+        navigate("/bookings")
+    }
 
     useEffect(() => {
 
@@ -180,6 +184,7 @@ export default function Header() {
                                 <div  className="z-20 absolute mt-12 flex flex-col gap-2 px-4 py-2 border rounded-lg bg-white shadow-md right-0 top-0  whitespace-nowrap ">
                                     <p className=' border-b'>You: {user?.role}</p>
                                     <button onClick={handleSignOut} className="bg-red-600 text-white px-4 py-1.5 rounded-lg font-semibold  lg:block">Sign Out</button>
+                                    {user?.role==='user'?(<button onClick={handleCLickBookings} className="bg-green-500 text-white px-4 py-1.5 rounded-lg font-semibold  lg:block">Bookings</button>):""}
                                      {permissions?.includes("CREATE") && (
                                         <button
                                             onClick={handleAddMovieClick}

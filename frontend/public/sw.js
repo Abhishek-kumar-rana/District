@@ -116,6 +116,7 @@ self.addEventListener("fetch", (event) => {
 
    if (url.pathname.startsWith("/api")) {
     event.respondWith(staleWhileRevalidate(event.request));
+    
     return;
   }
 
@@ -261,7 +262,12 @@ async function syncMovies() {
       });
 
       await deletePendingMovie(item.id);
-
+      
+       await self.registration.showNotification("District", {
+        body: `"${item.movie.title}" synced successfully.`,
+        icon: "/icon-192.png",
+        badge: "/icon-192.png",
+      });
       console.log("Movie Synced");
 
     } catch (err) {
@@ -274,6 +280,16 @@ async function syncMovies() {
 
 }
 
+
+self.addEventListener("notificationclick", (event) => {
+
+  event.notification.close();
+
+  event.waitUntil(
+    clients.openWindow(`/movies/${movieId}`)
+  );
+
+});
 
 
 

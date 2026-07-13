@@ -2,6 +2,7 @@ import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { api } from "./axios";
 import type { ApiResponse, CreateMoviePayload, Movie, UpdateMoviePayload } from "./Movies.type";
 import { saveMovieOffline } from "../offlineDB";
+import { notify } from "../utils/Notification";
 
 
  
@@ -108,18 +109,18 @@ export const createMovie = async (
   payload: CreateMoviePayload,
   adminId: string | number
 ) => {
+  console.log("create movie is called..")
   try {
-    const response = await api.post(
-      "/api/movies",
-      payload,
-      withAdminHeader(adminId)
-    );
+    if (!navigator.onLine) {
 
-    return response.data;
-  } catch (err) {
-     if (!navigator.onLine) {
       await saveMovieOffline(payload, adminId);
-
+      // if(Notification.permission==="granted"){
+      //   new Notification("District",{
+      //     body:`"${payload.title}" saved locally. It will sync automatically when you are online`,
+      //     icon: "/icon-png",
+      //   })
+      // }
+      // notify(payload.title,"saved locally. It will sync automatically when you are online")
       const registration = await navigator.serviceWorker.ready;
 
       if ("sync" in registration) {
@@ -132,8 +133,17 @@ export const createMovie = async (
         data: payload,
       };
     }
+    else{
+      const response = await api.post( "/api/movies",  payload, withAdminHeader(adminId)
+    );
 
-    throw err;
+    return response.data;
+    }
+    
+  } catch (err) {
+     
+    alert(err);
+    
   }
 };
 
