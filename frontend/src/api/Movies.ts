@@ -2,9 +2,15 @@ import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { api } from "./axios";
 import type { ApiResponse, CreateMoviePayload, Movie, UpdateMoviePayload } from "./Movies.type";
 import { saveMovieOffline } from "../offlineDB";
-import { notify } from "../utils/Notification";
 
 
+
+const substitute={
+  "api":{
+    "movies":"/api/movies",
+    "moviesById":(id:string|Number)=>`/api/movies/${id}`
+  }
+}
  
 
 
@@ -40,7 +46,7 @@ const withAdminHeader = (adminId: string | number) => ({
 // get all movies 
 
  const getMovies = async () => {
-    const response = await api.get("/api/movies");
+    const response = await api.get(substitute.api.movies);
     console.log("Movie API Response:", response.data); 
     return response.data;
 };
@@ -57,7 +63,7 @@ export const useMovies = () => {
 
 
 export const getMovieById = async (id: string | number): Promise<ApiResponse<Movie>> => {
-  const response = await api.get(`/api/movies/${id}`);
+  const response = await api.get(substitute.api.moviesById(id));
   return response.data;
 };
 
@@ -134,7 +140,7 @@ export const createMovie = async (
       };
     }
     else{
-      const response = await api.post( "/api/movies",  payload, withAdminHeader(adminId)
+      const response = await api.post( substitute.api.movies,  payload, withAdminHeader(adminId)
     );
 
     return response.data;
@@ -170,7 +176,7 @@ export const updateMovie = async (
   payload: UpdateMoviePayload,
   adminId: string | number
 ): Promise<ApiResponse<Movie>> => {
-  const response = await api.put(`/api/movies/${id}`, payload, withAdminHeader(adminId));
+  const response = await api.put(substitute.api.moviesById(id), payload, withAdminHeader(adminId));
   return response.data;
 };
 
@@ -199,7 +205,7 @@ export const deleteMovie = async (
   id: string | number,
   adminId: string | number
 ): Promise<ApiResponse<Movie>> => {
-  const response = await api.delete(`/api/movies/${id}`, withAdminHeader(adminId));
+  const response = await api.delete(substitute.api.moviesById(id), withAdminHeader(adminId));
   return response.data;
 };
 
