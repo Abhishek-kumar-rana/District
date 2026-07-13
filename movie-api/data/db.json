@@ -2,35 +2,27 @@
   "users": [
     {
       "id": 1,
-      "name": "Admin User",
-      "email": "admin@example.com",
-      "password": "admin123",
-      "role": "admin",
-      "createdAt": "2026-07-03T07:12:16.686Z"
+      "name": "Super Admin",
+      "email": "superadmin@example.com",
+      "password": "11111111",
+      "role": "superadmin",
+      "createdAt": "2026-07-07T10:53:10.611Z"
     },
     {
       "id": 2,
-      "name": "Test User",
-      "email": "user@example.com",
-      "password": "user123",
-      "role": "user",
-      "createdAt": "2026-07-03T07:12:16.687Z"
+      "name": "Admin User",
+      "email": "admin@example.com",
+      "password": "11111111",
+      "role": "admin",
+      "createdAt": "2026-07-07T10:53:10.612Z"
     },
     {
       "id": 3,
-      "name": "",
-      "email": "user1@example.com",
-      "password": "121212",
+      "name": "Test User",
+      "email": "user@example.com",
+      "password": "11111111",
       "role": "user",
-      "createdAt": "2026-07-05T05:58:48.504Z"
-    },
-    {
-      "id": 4,
-      "name": "",
-      "email": "admin1@example.com",
-      "password": "121212",
-      "role": "admin",
-      "createdAt": "2026-07-05T06:01:53.179Z"
+      "createdAt": "2026-07-07T10:53:10.612Z"
     }
   ],
   "movies": [
@@ -76,15 +68,467 @@
           "role": "Director",
           "image": "https://cdn.district.in/movies-assets/images/cinema/Pierre%20Coffin%201-39a6a300-0584-11f1-bb3a-cbf1dee679b8.jpg?im=Resize,width=184"
         }
+      ],
+      "price": 200,
+      "seats": [
+        {
+          "seatId": "A1",
+          "row": "A",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A2",
+          "row": "A",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A3",
+          "row": "A",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A4",
+          "row": "A",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A5",
+          "row": "A",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A6",
+          "row": "A",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A7",
+          "row": "A",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A8",
+          "row": "A",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A9",
+          "row": "A",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A10",
+          "row": "A",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B1",
+          "row": "B",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B2",
+          "row": "B",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B3",
+          "row": "B",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B4",
+          "row": "B",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B5",
+          "row": "B",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B6",
+          "row": "B",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B7",
+          "row": "B",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B8",
+          "row": "B",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B9",
+          "row": "B",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B10",
+          "row": "B",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C1",
+          "row": "C",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C2",
+          "row": "C",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C3",
+          "row": "C",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C4",
+          "row": "C",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C5",
+          "row": "C",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C6",
+          "row": "C",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C7",
+          "row": "C",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C8",
+          "row": "C",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C9",
+          "row": "C",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C10",
+          "row": "C",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D1",
+          "row": "D",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D2",
+          "row": "D",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D3",
+          "row": "D",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D4",
+          "row": "D",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D5",
+          "row": "D",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D6",
+          "row": "D",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D7",
+          "row": "D",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D8",
+          "row": "D",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D9",
+          "row": "D",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D10",
+          "row": "D",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E1",
+          "row": "E",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E2",
+          "row": "E",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E3",
+          "row": "E",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E4",
+          "row": "E",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E5",
+          "row": "E",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E6",
+          "row": "E",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E7",
+          "row": "E",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E8",
+          "row": "E",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E9",
+          "row": "E",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E10",
+          "row": "E",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        }
       ]
     },
     {
       "id": 102,
       "title": "Galaxy Warriors",
-      "certificate": "UA13+",
+      "certificate": "U",
       "languages": [
-        "English",
-        "Hindi"
+        "English"
       ],
       "duration": "2h 05m",
       "releaseDate": "2026-08-15",
@@ -120,6 +564,459 @@
           "role": "Director",
           "image": "https://cdn.district.in/movies-assets/images/cinema/Pierre%20Coffin%201-39a6a300-0584-11f1-bb3a-cbf1dee679b8.jpg?im=Resize,width=184"
         }
+      ],
+      "price": 200,
+      "seats": [
+        {
+          "seatId": "A1",
+          "row": "A",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A2",
+          "row": "A",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A3",
+          "row": "A",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A4",
+          "row": "A",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A5",
+          "row": "A",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A6",
+          "row": "A",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A7",
+          "row": "A",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A8",
+          "row": "A",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A9",
+          "row": "A",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A10",
+          "row": "A",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B1",
+          "row": "B",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B2",
+          "row": "B",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B3",
+          "row": "B",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B4",
+          "row": "B",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B5",
+          "row": "B",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B6",
+          "row": "B",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B7",
+          "row": "B",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B8",
+          "row": "B",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B9",
+          "row": "B",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B10",
+          "row": "B",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C1",
+          "row": "C",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C2",
+          "row": "C",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C3",
+          "row": "C",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C4",
+          "row": "C",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C5",
+          "row": "C",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C6",
+          "row": "C",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C7",
+          "row": "C",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C8",
+          "row": "C",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C9",
+          "row": "C",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C10",
+          "row": "C",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D1",
+          "row": "D",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D2",
+          "row": "D",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D3",
+          "row": "D",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D4",
+          "row": "D",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D5",
+          "row": "D",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D6",
+          "row": "D",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D7",
+          "row": "D",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D8",
+          "row": "D",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D9",
+          "row": "D",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D10",
+          "row": "D",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E1",
+          "row": "E",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E2",
+          "row": "E",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E3",
+          "row": "E",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E4",
+          "row": "E",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E5",
+          "row": "E",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E6",
+          "row": "E",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E7",
+          "row": "E",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E8",
+          "row": "E",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E9",
+          "row": "E",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E10",
+          "row": "E",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        }
       ]
     },
     {
@@ -139,7 +1036,460 @@
       ],
       "bannerImage": "https://cdn.district.in/movies-assets/images/cinema/Minions-%26-Monsters-57fd7730-6ba9-11f1-84fa-05ff8282b7b2.jpg?im=Resize,width=400",
       "backgroundImage": "https://cdn.district.in/movies-assets/images/cinema/Minions-%26-Monsters_Cover-c9270de0-0592-11f1-bb3a-cbf1dee679b8.jpg",
-      "cast": []
+      "cast": [],
+      "price": 200,
+      "seats": [
+        {
+          "seatId": "A1",
+          "row": "A",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A2",
+          "row": "A",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A3",
+          "row": "A",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A4",
+          "row": "A",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A5",
+          "row": "A",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A6",
+          "row": "A",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A7",
+          "row": "A",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A8",
+          "row": "A",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A9",
+          "row": "A",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A10",
+          "row": "A",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B1",
+          "row": "B",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B2",
+          "row": "B",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B3",
+          "row": "B",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B4",
+          "row": "B",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B5",
+          "row": "B",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B6",
+          "row": "B",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B7",
+          "row": "B",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B8",
+          "row": "B",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B9",
+          "row": "B",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B10",
+          "row": "B",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C1",
+          "row": "C",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C2",
+          "row": "C",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C3",
+          "row": "C",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C4",
+          "row": "C",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C5",
+          "row": "C",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C6",
+          "row": "C",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C7",
+          "row": "C",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C8",
+          "row": "C",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C9",
+          "row": "C",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C10",
+          "row": "C",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D1",
+          "row": "D",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D2",
+          "row": "D",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D3",
+          "row": "D",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D4",
+          "row": "D",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D5",
+          "row": "D",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D6",
+          "row": "D",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D7",
+          "row": "D",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D8",
+          "row": "D",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D9",
+          "row": "D",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D10",
+          "row": "D",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E1",
+          "row": "E",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E2",
+          "row": "E",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E3",
+          "row": "E",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E4",
+          "row": "E",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E5",
+          "row": "E",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E6",
+          "row": "E",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E7",
+          "row": "E",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E8",
+          "row": "E",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E9",
+          "row": "E",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E10",
+          "row": "E",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        }
+      ]
     },
     {
       "id": 104,
@@ -157,7 +1507,460 @@
       ],
       "bannerImage": "https://cdn.district.in/movies-assets/images/cinema/Minions-%26-Monsters-57fd7730-6ba9-11f1-84fa-05ff8282b7b2.jpg?im=Resize,width=400",
       "backgroundImage": "https://cdn.district.in/movies-assets/images/cinema/Minions-%26-Monsters_Cover-c9270de0-0592-11f1-bb3a-cbf1dee679b8.jpg",
-      "cast": []
+      "cast": [],
+      "price": 200,
+      "seats": [
+        {
+          "seatId": "A1",
+          "row": "A",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A2",
+          "row": "A",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A3",
+          "row": "A",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A4",
+          "row": "A",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A5",
+          "row": "A",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A6",
+          "row": "A",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A7",
+          "row": "A",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A8",
+          "row": "A",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A9",
+          "row": "A",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A10",
+          "row": "A",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B1",
+          "row": "B",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B2",
+          "row": "B",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B3",
+          "row": "B",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B4",
+          "row": "B",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B5",
+          "row": "B",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B6",
+          "row": "B",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B7",
+          "row": "B",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B8",
+          "row": "B",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B9",
+          "row": "B",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B10",
+          "row": "B",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C1",
+          "row": "C",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C2",
+          "row": "C",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C3",
+          "row": "C",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C4",
+          "row": "C",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C5",
+          "row": "C",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C6",
+          "row": "C",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C7",
+          "row": "C",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C8",
+          "row": "C",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C9",
+          "row": "C",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C10",
+          "row": "C",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D1",
+          "row": "D",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D2",
+          "row": "D",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D3",
+          "row": "D",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D4",
+          "row": "D",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D5",
+          "row": "D",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D6",
+          "row": "D",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D7",
+          "row": "D",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D8",
+          "row": "D",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D9",
+          "row": "D",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D10",
+          "row": "D",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E1",
+          "row": "E",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E2",
+          "row": "E",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E3",
+          "row": "E",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E4",
+          "row": "E",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E5",
+          "row": "E",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E6",
+          "row": "E",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E7",
+          "row": "E",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E8",
+          "row": "E",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E9",
+          "row": "E",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E10",
+          "row": "E",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        }
+      ]
     },
     {
       "id": 105,
@@ -176,7 +1979,460 @@
       ],
       "bannerImage": "https://cdn.district.in/movies-assets/images/cinema/Minions-%26-Monsters-57fd7730-6ba9-11f1-84fa-05ff8282b7b2.jpg?im=Resize,width=400",
       "backgroundImage": "https://cdn.district.in/movies-assets/images/cinema/Minions-%26-Monsters_Cover-c9270de0-0592-11f1-bb3a-cbf1dee679b8.jpg",
-      "cast": []
+      "cast": [],
+      "price": 200,
+      "seats": [
+        {
+          "seatId": "A1",
+          "row": "A",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A2",
+          "row": "A",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A3",
+          "row": "A",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A4",
+          "row": "A",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A5",
+          "row": "A",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A6",
+          "row": "A",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A7",
+          "row": "A",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A8",
+          "row": "A",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A9",
+          "row": "A",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A10",
+          "row": "A",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B1",
+          "row": "B",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B2",
+          "row": "B",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B3",
+          "row": "B",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B4",
+          "row": "B",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B5",
+          "row": "B",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B6",
+          "row": "B",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B7",
+          "row": "B",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B8",
+          "row": "B",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B9",
+          "row": "B",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B10",
+          "row": "B",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C1",
+          "row": "C",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C2",
+          "row": "C",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C3",
+          "row": "C",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C4",
+          "row": "C",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C5",
+          "row": "C",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C6",
+          "row": "C",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C7",
+          "row": "C",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C8",
+          "row": "C",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C9",
+          "row": "C",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C10",
+          "row": "C",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D1",
+          "row": "D",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D2",
+          "row": "D",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D3",
+          "row": "D",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D4",
+          "row": "D",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D5",
+          "row": "D",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D6",
+          "row": "D",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D7",
+          "row": "D",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D8",
+          "row": "D",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D9",
+          "row": "D",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D10",
+          "row": "D",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E1",
+          "row": "E",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E2",
+          "row": "E",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E3",
+          "row": "E",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E4",
+          "row": "E",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E5",
+          "row": "E",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E6",
+          "row": "E",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E7",
+          "row": "E",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E8",
+          "row": "E",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E9",
+          "row": "E",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E10",
+          "row": "E",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        }
+      ]
     },
     {
       "id": 106,
@@ -194,7 +2450,460 @@
       ],
       "bannerImage": "https://cdn.district.in/movies-assets/images/cinema/Minions-%26-Monsters-57fd7730-6ba9-11f1-84fa-05ff8282b7b2.jpg?im=Resize,width=400",
       "backgroundImage": "https://cdn.district.in/movies-assets/images/cinema/Minions-%26-Monsters_Cover-c9270de0-0592-11f1-bb3a-cbf1dee679b8.jpg",
-      "cast": []
+      "cast": [],
+      "price": 200,
+      "seats": [
+        {
+          "seatId": "A1",
+          "row": "A",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A2",
+          "row": "A",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A3",
+          "row": "A",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A4",
+          "row": "A",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A5",
+          "row": "A",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A6",
+          "row": "A",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A7",
+          "row": "A",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A8",
+          "row": "A",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A9",
+          "row": "A",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A10",
+          "row": "A",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B1",
+          "row": "B",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B2",
+          "row": "B",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B3",
+          "row": "B",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B4",
+          "row": "B",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B5",
+          "row": "B",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B6",
+          "row": "B",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B7",
+          "row": "B",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B8",
+          "row": "B",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B9",
+          "row": "B",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B10",
+          "row": "B",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C1",
+          "row": "C",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C2",
+          "row": "C",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C3",
+          "row": "C",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C4",
+          "row": "C",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C5",
+          "row": "C",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C6",
+          "row": "C",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C7",
+          "row": "C",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C8",
+          "row": "C",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C9",
+          "row": "C",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C10",
+          "row": "C",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D1",
+          "row": "D",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D2",
+          "row": "D",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D3",
+          "row": "D",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D4",
+          "row": "D",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D5",
+          "row": "D",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D6",
+          "row": "D",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D7",
+          "row": "D",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D8",
+          "row": "D",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D9",
+          "row": "D",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D10",
+          "row": "D",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E1",
+          "row": "E",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E2",
+          "row": "E",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E3",
+          "row": "E",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E4",
+          "row": "E",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E5",
+          "row": "E",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E6",
+          "row": "E",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E7",
+          "row": "E",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E8",
+          "row": "E",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E9",
+          "row": "E",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E10",
+          "row": "E",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        }
+      ]
     },
     {
       "id": 107,
@@ -213,7 +2922,460 @@
       ],
       "bannerImage": "https://cdn.district.in/movies-assets/images/cinema/Minions-%26-Monsters-57fd7730-6ba9-11f1-84fa-05ff8282b7b2.jpg?im=Resize,width=400",
       "backgroundImage": "https://cdn.district.in/movies-assets/images/cinema/Minions-%26-Monsters_Cover-c9270de0-0592-11f1-bb3a-cbf1dee679b8.jpg",
-      "cast": []
+      "cast": [],
+      "price": 200,
+      "seats": [
+        {
+          "seatId": "A1",
+          "row": "A",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A2",
+          "row": "A",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A3",
+          "row": "A",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A4",
+          "row": "A",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A5",
+          "row": "A",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A6",
+          "row": "A",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A7",
+          "row": "A",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A8",
+          "row": "A",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A9",
+          "row": "A",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A10",
+          "row": "A",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B1",
+          "row": "B",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B2",
+          "row": "B",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B3",
+          "row": "B",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B4",
+          "row": "B",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B5",
+          "row": "B",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B6",
+          "row": "B",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B7",
+          "row": "B",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B8",
+          "row": "B",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B9",
+          "row": "B",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B10",
+          "row": "B",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C1",
+          "row": "C",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C2",
+          "row": "C",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C3",
+          "row": "C",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C4",
+          "row": "C",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C5",
+          "row": "C",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C6",
+          "row": "C",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C7",
+          "row": "C",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C8",
+          "row": "C",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C9",
+          "row": "C",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C10",
+          "row": "C",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D1",
+          "row": "D",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D2",
+          "row": "D",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D3",
+          "row": "D",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D4",
+          "row": "D",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D5",
+          "row": "D",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D6",
+          "row": "D",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D7",
+          "row": "D",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D8",
+          "row": "D",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D9",
+          "row": "D",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D10",
+          "row": "D",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E1",
+          "row": "E",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E2",
+          "row": "E",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E3",
+          "row": "E",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E4",
+          "row": "E",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E5",
+          "row": "E",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E6",
+          "row": "E",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E7",
+          "row": "E",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E8",
+          "row": "E",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E9",
+          "row": "E",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E10",
+          "row": "E",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        }
+      ]
     },
     {
       "id": 108,
@@ -231,12 +3393,937 @@
       ],
       "bannerImage": "https://cdn.district.in/movies-assets/images/cinema/Minions-%26-Monsters-57fd7730-6ba9-11f1-84fa-05ff8282b7b2.jpg?im=Resize,width=400",
       "backgroundImage": "https://cdn.district.in/movies-assets/images/cinema/Minions-%26-Monsters_Cover-c9270de0-0592-11f1-bb3a-cbf1dee679b8.jpg",
-      "cast": []
+      "cast": [],
+      "price": 200,
+      "seats": [
+        {
+          "seatId": "A1",
+          "row": "A",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A2",
+          "row": "A",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A3",
+          "row": "A",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A4",
+          "row": "A",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A5",
+          "row": "A",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A6",
+          "row": "A",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A7",
+          "row": "A",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A8",
+          "row": "A",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A9",
+          "row": "A",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A10",
+          "row": "A",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B1",
+          "row": "B",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B2",
+          "row": "B",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B3",
+          "row": "B",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B4",
+          "row": "B",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B5",
+          "row": "B",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B6",
+          "row": "B",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B7",
+          "row": "B",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B8",
+          "row": "B",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B9",
+          "row": "B",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B10",
+          "row": "B",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C1",
+          "row": "C",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C2",
+          "row": "C",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C3",
+          "row": "C",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C4",
+          "row": "C",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C5",
+          "row": "C",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C6",
+          "row": "C",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C7",
+          "row": "C",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C8",
+          "row": "C",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C9",
+          "row": "C",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C10",
+          "row": "C",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D1",
+          "row": "D",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D2",
+          "row": "D",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D3",
+          "row": "D",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D4",
+          "row": "D",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D5",
+          "row": "D",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D6",
+          "row": "D",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D7",
+          "row": "D",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D8",
+          "row": "D",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D9",
+          "row": "D",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D10",
+          "row": "D",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E1",
+          "row": "E",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E2",
+          "row": "E",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E3",
+          "row": "E",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E4",
+          "row": "E",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E5",
+          "row": "E",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E6",
+          "row": "E",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E7",
+          "row": "E",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E8",
+          "row": "E",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E9",
+          "row": "E",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E10",
+          "row": "E",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        }
+      ]
+    },
+    {
+      "id": 109,
+      "title": "Shadow Hunter 2",
+      "certificate": "UA7+",
+      "languages": [
+        "English",
+        "Japanese"
+      ],
+      "duration": "3h 19m",
+      "releaseDate": "2027-03-15",
+      "description": "A legendary warrior hunts supernatural creatures across the world 2.",
+      "genres": [
+        "Action",
+        "Fantasy"
+      ],
+      "bannerImage": "https://cdn.district.in/movies-assets/images/cinema/Minions-%26-Monsters-57fd7730-6ba9-11f1-84fa-05ff8282b7b2.jpg?im=Resize,width=400",
+      "backgroundImage": "https://cdn.district.in/movies-assets/images/cinema/Minions-%26-Monsters_Cover-c9270de0-0592-11f1-bb3a-cbf1dee679b8.jpg",
+      "cast": [],
+      "price": 200,
+      "seats": [
+        {
+          "seatId": "A1",
+          "row": "A",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A2",
+          "row": "A",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A3",
+          "row": "A",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A4",
+          "row": "A",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A5",
+          "row": "A",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A6",
+          "row": "A",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A7",
+          "row": "A",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A8",
+          "row": "A",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A9",
+          "row": "A",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A10",
+          "row": "A",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B1",
+          "row": "B",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B2",
+          "row": "B",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B3",
+          "row": "B",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B4",
+          "row": "B",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B5",
+          "row": "B",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B6",
+          "row": "B",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B7",
+          "row": "B",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B8",
+          "row": "B",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B9",
+          "row": "B",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B10",
+          "row": "B",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C1",
+          "row": "C",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C2",
+          "row": "C",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C3",
+          "row": "C",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C4",
+          "row": "C",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C5",
+          "row": "C",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C6",
+          "row": "C",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C7",
+          "row": "C",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C8",
+          "row": "C",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C9",
+          "row": "C",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C10",
+          "row": "C",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D1",
+          "row": "D",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D2",
+          "row": "D",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D3",
+          "row": "D",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D4",
+          "row": "D",
+          "number": 4,
+          "status": "booked",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": 3
+        },
+        {
+          "seatId": "D5",
+          "row": "D",
+          "number": 5,
+          "status": "booked",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": 3
+        },
+        {
+          "seatId": "D6",
+          "row": "D",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D7",
+          "row": "D",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D8",
+          "row": "D",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D9",
+          "row": "D",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D10",
+          "row": "D",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E1",
+          "row": "E",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E2",
+          "row": "E",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E3",
+          "row": "E",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E4",
+          "row": "E",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E5",
+          "row": "E",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E6",
+          "row": "E",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E7",
+          "row": "E",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E8",
+          "row": "E",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E9",
+          "row": "E",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E10",
+          "row": "E",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        }
+      ]
     },
     {
       "id": 110,
-      "title": "Dream Chasers",
-      "certificate": "U",
+      "title": "Dream Chasers 3",
+      "certificate": "UA7+",
       "languages": [
         "English",
         "Hindi"
@@ -250,25 +4337,1920 @@
       ],
       "bannerImage": "https://cdn.district.in/movies-assets/images/cinema/Minions-%26-Monsters-57fd7730-6ba9-11f1-84fa-05ff8282b7b2.jpg?im=Resize,width=400",
       "backgroundImage": "https://cdn.district.in/movies-assets/images/cinema/Minions-%26-Monsters_Cover-c9270de0-0592-11f1-bb3a-cbf1dee679b8.jpg",
-      "cast": []
+      "cast": [],
+      "price": 200,
+      "seats": [
+        {
+          "seatId": "A1",
+          "row": "A",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A2",
+          "row": "A",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A3",
+          "row": "A",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A4",
+          "row": "A",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A5",
+          "row": "A",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A6",
+          "row": "A",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A7",
+          "row": "A",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A8",
+          "row": "A",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A9",
+          "row": "A",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A10",
+          "row": "A",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B1",
+          "row": "B",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B2",
+          "row": "B",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B3",
+          "row": "B",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B4",
+          "row": "B",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B5",
+          "row": "B",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B6",
+          "row": "B",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B7",
+          "row": "B",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B8",
+          "row": "B",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B9",
+          "row": "B",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B10",
+          "row": "B",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C1",
+          "row": "C",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C2",
+          "row": "C",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C3",
+          "row": "C",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C4",
+          "row": "C",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C5",
+          "row": "C",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C6",
+          "row": "C",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C7",
+          "row": "C",
+          "number": 7,
+          "status": "booked",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": 3
+        },
+        {
+          "seatId": "C8",
+          "row": "C",
+          "number": 8,
+          "status": "booked",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": 3
+        },
+        {
+          "seatId": "C9",
+          "row": "C",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C10",
+          "row": "C",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D1",
+          "row": "D",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D2",
+          "row": "D",
+          "number": 2,
+          "status": "booked",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": 3
+        },
+        {
+          "seatId": "D3",
+          "row": "D",
+          "number": 3,
+          "status": "booked",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": 3
+        },
+        {
+          "seatId": "D4",
+          "row": "D",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D5",
+          "row": "D",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D6",
+          "row": "D",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D7",
+          "row": "D",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D8",
+          "row": "D",
+          "number": 8,
+          "status": "booked",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": 3
+        },
+        {
+          "seatId": "D9",
+          "row": "D",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D10",
+          "row": "D",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E1",
+          "row": "E",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E2",
+          "row": "E",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E3",
+          "row": "E",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E4",
+          "row": "E",
+          "number": 4,
+          "status": "booked",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": 3
+        },
+        {
+          "seatId": "E5",
+          "row": "E",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E6",
+          "row": "E",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E7",
+          "row": "E",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E8",
+          "row": "E",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E9",
+          "row": "E",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E10",
+          "row": "E",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        }
+      ]
     },
     {
-      "id": 111,
-      "title": "Alpha",
-      "certificate": "UA16+",
+      "id": 112,
+      "title": "addd movie",
+      "certificate": "U",
       "languages": [
-        "hindi"
+        "English",
+        "Japanese"
       ],
-      "duration": "2h 5m",
-      "releaseDate": "2026-07-05",
-      "description": "Two women are forced into an unlikely alliance as they confront a ruthless adversary. Pushed to their physical and emotional limits, they navigate a relentless series of confrontations that lead to a brutal final showdown.",
+      "duration": "3h 19m",
+      "releaseDate": "2026-07-16",
+      "description": "disccc scc x xf f dxg dgsd gdsg dg dg dfsg hsgfh dfh dfgfj dgf jxhxh xghxdf h",
       "genres": [
         "Action",
-        "spy"
+        "Fantasy"
       ],
-      "bannerImage": "https://cdn.district.in/movies-assets/images/cinema/Alpha-062ca980-6ef1-11f1-b0b5-2f04c00aa32d.jpg",
-      "backgroundImage": "https://cdn.district.in/movies-assets/images/cinema/_Cover-7277e4d0-6ba2-11f1-9444-c504df2f3dc4.jpg",
-      "cast": []
+      "bannerImage": "https://cdn.district.in/movies-assets/images/cinema/Minions-%26-Monsters_Cover-c9270de0-0592-11f1-bb3a-cbf1dee679b8.jpg",
+      "backgroundImage": "https://cdn.district.in/movies-assets/images/cinema/Minions-%26-Monsters_Cover-c9270de0-0592-11f1-bb3a-cbf1dee679b8.jpg",
+      "cast": [],
+      "price": 200,
+      "seats": [
+        {
+          "seatId": "A1",
+          "row": "A",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A2",
+          "row": "A",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A3",
+          "row": "A",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A4",
+          "row": "A",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A5",
+          "row": "A",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A6",
+          "row": "A",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A7",
+          "row": "A",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A8",
+          "row": "A",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A9",
+          "row": "A",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A10",
+          "row": "A",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B1",
+          "row": "B",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B2",
+          "row": "B",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B3",
+          "row": "B",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B4",
+          "row": "B",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B5",
+          "row": "B",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B6",
+          "row": "B",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B7",
+          "row": "B",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B8",
+          "row": "B",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B9",
+          "row": "B",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B10",
+          "row": "B",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C1",
+          "row": "C",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C2",
+          "row": "C",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C3",
+          "row": "C",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C4",
+          "row": "C",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C5",
+          "row": "C",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C6",
+          "row": "C",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C7",
+          "row": "C",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C8",
+          "row": "C",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C9",
+          "row": "C",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C10",
+          "row": "C",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D1",
+          "row": "D",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D2",
+          "row": "D",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D3",
+          "row": "D",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D4",
+          "row": "D",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D5",
+          "row": "D",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D6",
+          "row": "D",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D7",
+          "row": "D",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D8",
+          "row": "D",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D9",
+          "row": "D",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D10",
+          "row": "D",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E1",
+          "row": "E",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E2",
+          "row": "E",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E3",
+          "row": "E",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E4",
+          "row": "E",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E5",
+          "row": "E",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E6",
+          "row": "E",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E7",
+          "row": "E",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E8",
+          "row": "E",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E9",
+          "row": "E",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E10",
+          "row": "E",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        }
+      ]
+    },
+    {
+      "id": 113,
+      "title": "adddd dddd d d",
+      "certificate": "U",
+      "languages": [
+        "English"
+      ],
+      "duration": "1h 52m",
+      "releaseDate": "2026-07-15",
+      "description": "d d dfdf df d ",
+      "genres": [
+        "Action",
+        "Fantasy"
+      ],
+      "bannerImage": "https://cdn.district.in/movies-assets/images/cinema/Minions-%26-Monsters_Cover-c9270de0-0592-11f1-bb3a-cbf1dee679b8.jpg",
+      "backgroundImage": "https://cdn.district.in/movies-assets/images/cinema/Minions-%26-Monsters_Cover-c9270de0-0592-11f1-bb3a-cbf1dee679b8.jpg",
+      "cast": [],
+      "price": 200,
+      "seats": [
+        {
+          "seatId": "A1",
+          "row": "A",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A2",
+          "row": "A",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A3",
+          "row": "A",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A4",
+          "row": "A",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A5",
+          "row": "A",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A6",
+          "row": "A",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A7",
+          "row": "A",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A8",
+          "row": "A",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A9",
+          "row": "A",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A10",
+          "row": "A",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B1",
+          "row": "B",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B2",
+          "row": "B",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B3",
+          "row": "B",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B4",
+          "row": "B",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B5",
+          "row": "B",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B6",
+          "row": "B",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B7",
+          "row": "B",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B8",
+          "row": "B",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B9",
+          "row": "B",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B10",
+          "row": "B",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C1",
+          "row": "C",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C2",
+          "row": "C",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C3",
+          "row": "C",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C4",
+          "row": "C",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C5",
+          "row": "C",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C6",
+          "row": "C",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C7",
+          "row": "C",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C8",
+          "row": "C",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C9",
+          "row": "C",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C10",
+          "row": "C",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D1",
+          "row": "D",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D2",
+          "row": "D",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D3",
+          "row": "D",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D4",
+          "row": "D",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D5",
+          "row": "D",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D6",
+          "row": "D",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D7",
+          "row": "D",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D8",
+          "row": "D",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D9",
+          "row": "D",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D10",
+          "row": "D",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E1",
+          "row": "E",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E2",
+          "row": "E",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E3",
+          "row": "E",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E4",
+          "row": "E",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E5",
+          "row": "E",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E6",
+          "row": "E",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E7",
+          "row": "E",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E8",
+          "row": "E",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E9",
+          "row": "E",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E10",
+          "row": "E",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        }
+      ]
+    },
+    {
+      "id": 114,
+      "title": "dfsd",
+      "certificate": "U",
+      "languages": [
+        "English"
+      ],
+      "duration": "1h 52m",
+      "releaseDate": "2026-07-15",
+      "description": "vdgd ",
+      "genres": [
+        "Action",
+        "Fantasy"
+      ],
+      "bannerImage": "https://cdn.district.in/movies-assets/images/cinema/Minions-%26-Monsters_Cover-c9270de0-0592-11f1-bb3a-cbf1dee679b8.jpg",
+      "backgroundImage": "https://cdn.district.in/movies-assets/images/cinema/Minions-%26-Monsters_Cover-c9270de0-0592-11f1-bb3a-cbf1dee679b8.jpg",
+      "cast": [],
+      "price": 200,
+      "seats": [
+        {
+          "seatId": "A1",
+          "row": "A",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A2",
+          "row": "A",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A3",
+          "row": "A",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A4",
+          "row": "A",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A5",
+          "row": "A",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A6",
+          "row": "A",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A7",
+          "row": "A",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A8",
+          "row": "A",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A9",
+          "row": "A",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "A10",
+          "row": "A",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B1",
+          "row": "B",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B2",
+          "row": "B",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B3",
+          "row": "B",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B4",
+          "row": "B",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B5",
+          "row": "B",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B6",
+          "row": "B",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B7",
+          "row": "B",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B8",
+          "row": "B",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B9",
+          "row": "B",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "B10",
+          "row": "B",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C1",
+          "row": "C",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C2",
+          "row": "C",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C3",
+          "row": "C",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C4",
+          "row": "C",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C5",
+          "row": "C",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C6",
+          "row": "C",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C7",
+          "row": "C",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C8",
+          "row": "C",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C9",
+          "row": "C",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "C10",
+          "row": "C",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D1",
+          "row": "D",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D2",
+          "row": "D",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D3",
+          "row": "D",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D4",
+          "row": "D",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D5",
+          "row": "D",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D6",
+          "row": "D",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D7",
+          "row": "D",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D8",
+          "row": "D",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D9",
+          "row": "D",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "D10",
+          "row": "D",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E1",
+          "row": "E",
+          "number": 1,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E2",
+          "row": "E",
+          "number": 2,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E3",
+          "row": "E",
+          "number": 3,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E4",
+          "row": "E",
+          "number": 4,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E5",
+          "row": "E",
+          "number": 5,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E6",
+          "row": "E",
+          "number": 6,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E7",
+          "row": "E",
+          "number": 7,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E8",
+          "row": "E",
+          "number": 8,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E9",
+          "row": "E",
+          "number": 9,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        },
+        {
+          "seatId": "E10",
+          "row": "E",
+          "number": 10,
+          "status": "available",
+          "heldBy": null,
+          "heldUntil": null,
+          "bookedBy": null
+        }
+      ]
+    }
+  ],
+  "bookings": [
+    {
+      "id": 1,
+      "movieId": 110,
+      "userId": 3,
+      "seatIds": [
+        "D2",
+        "D3"
+      ],
+      "totalAmount": 400,
+      "bookedAt": "2026-07-08T10:55:16.154Z"
+    },
+    {
+      "id": 2,
+      "movieId": 110,
+      "userId": 3,
+      "seatIds": [
+        "E4"
+      ],
+      "totalAmount": 200,
+      "bookedAt": "2026-07-08T10:56:52.377Z"
+    },
+    {
+      "id": 3,
+      "movieId": 110,
+      "userId": 3,
+      "seatIds": [
+        "C7",
+        "C8",
+        "D8"
+      ],
+      "totalAmount": 600,
+      "bookedAt": "2026-07-08T11:32:47.349Z"
+    },
+    {
+      "id": 4,
+      "movieId": 109,
+      "userId": 3,
+      "seatIds": [
+        "D4",
+        "D5"
+      ],
+      "totalAmount": 400,
+      "bookedAt": "2026-07-08T13:14:44.822Z"
     }
   ]
 }

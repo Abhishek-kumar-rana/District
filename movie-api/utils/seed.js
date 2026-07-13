@@ -1,16 +1,33 @@
 // Run with: npm run seed
-// Resets data/db.json back to its initial state (2 users + 10 movies).
+// Resets data/db.json back to its initial state (3 users + 10 movies).
 const fs = require("fs");
 const path = require("path");
 
 const moviesSeed = require("../data/movies.seed.json");
+const { generateSeats } = require("../models/seatModel");
 
 const DB_PATH = path.join(__dirname, "..", "data", "db.json");
+
+// Give every seeded movie its own auto-generated 50-seat map + a price,
+// same as what happens automatically on POST /api/movies.
+const moviesWithSeats = moviesSeed.map((m) => ({
+  ...m,
+  price: m.price || 200,
+  seats: generateSeats(),
+}));
 
 const initialData = {
   users: [
     {
       id: 1,
+      name: "Super Admin",
+      email: "superadmin@example.com",
+      password: "11111111",
+      role: "superadmin",
+      createdAt: new Date().toISOString(),
+    },
+    {
+      id: 2,
       name: "Admin User",
       email: "admin@example.com",
       password: "11111111",
@@ -18,7 +35,7 @@ const initialData = {
       createdAt: new Date().toISOString(),
     },
     {
-      id: 2,
+      id: 3,
       name: "Test User",
       email: "user@example.com",
       password: "11111111",
@@ -26,7 +43,8 @@ const initialData = {
       createdAt: new Date().toISOString(),
     },
   ],
-  movies: moviesSeed,
+  movies: moviesWithSeats,
+  bookings: [],
 };
 
 fs.writeFileSync(DB_PATH, JSON.stringify(initialData, null, 2), "utf-8");

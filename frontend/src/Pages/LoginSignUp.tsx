@@ -5,18 +5,18 @@ import { zodResolver } from "@hookform/resolvers/zod";
 
 import { loginSchema, registerSchema } from "./zod/schema";
 import type { LoginForm, RegisterForm } from "./zod/schema";
-import { loginReq, registerUser } from "../api/api";
+import { loginReq, registerUser } from "../api/userApi";
 import { useNavigate } from "react-router-dom";
+import { useAuth } from "../hooks/useAuth";
 
 
 
 
 export const LoginSignUp = () => {
-    const [role, setRole] = useState("user");
-    const [data, setData] = useState();
+    
     const [registerError, setRegisterError] = useState("");
     const [registerSuccess, setRegisterSuccess] = useState(false);
-
+    const {login}=useAuth();
     const navigate=useNavigate();
 
     const {
@@ -32,7 +32,7 @@ export const LoginSignUp = () => {
         const response =await loginReq(data);
         console.log(response)
         if(response.success){
-            localStorage.setItem('currentUser', JSON.stringify(response.data));
+            login(response.data);
             window.location.href = "/"; 
            
             navigate("/");
@@ -108,7 +108,7 @@ export const LoginSignUp = () => {
                         </div>
 
                         <div>
-                            <button className="mt-1 p-2 block bg-violet-400 text-white text-lg w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-violet-500 focus:border-blue-500">Login</button>
+                            <button className="mt-1 p-2 block bg-violet-500 text-white text-lg w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-violet-600 focus:border-blue-600">Login</button>
                         </div>
                     </form>
 
@@ -189,7 +189,7 @@ export const LoginSignUp = () => {
                         )}
 
                         <div>
-                            <button className="mt-1 p-2 block bg-violet-400 text-white text-lg w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-violet-500 focus:border-blue-500">Submit</button>
+                            <button className="mt-1 p-2 block bg-violet-500 text-white text-lg w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-violet-600 focus:border-blue-600">Submit</button>
                         </div>
                     </form>
                 </div>

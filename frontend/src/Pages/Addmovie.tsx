@@ -1,22 +1,25 @@
 import { useNavigate } from "react-router-dom";
-import {  type User } from "../api/api";
-
-import MovieForm from "./Movieform";
-import type { MovieFormPayload } from "./Movieform";
+ 
+import MovieForm from "./MovieForm";
+import type { MovieFormPayload } from "./MovieForm";
 import { useCreateMovie } from "../api/Movies";
-
+import { useAuth } from "../hooks/useAuth";
+ 
 export default function AddMovie() {
   const navigate = useNavigate();
   const createMovie = useCreateMovie();
 
-  const getCurrentUser = (): User | null => {
-  const raw = localStorage.getItem("currentUser");
-  return raw ? JSON.parse(raw) : null;
-};
+  const {getCurrentUser,getPermissions}=useAuth();
+
+  const permissions=getPermissions();
+
+  
   const currentUser = getCurrentUser();
 
-  if (!currentUser || currentUser.role !== "admin") {
-    return <h2 className="text-center mt-40 text-xl font-semibold">Access denied. Admins only.</h2>;
+  
+
+  if (!currentUser || !permissions.includes("CREATE") ) {
+    return <h2 className="text-center mt-50 mb-40 text-xl font-semibold">Access denied. Admins only.</h2>;
   }
 
   const handleCreate = (payload: MovieFormPayload) => {
@@ -29,8 +32,8 @@ export default function AddMovie() {
   };
 
   return (
-    <div className="mt-32 max-w-xl mx-auto px-4 pb-16">
-      <h2 className="text-2xl font-bold mb-6 text-center">Add New Movie</h2>
+    <div className=" p-4 max-w-xl mx-auto lg:mt-30 mt-50 mb-10">
+      <h2 className="text-2xl font-bold mb-6 text-center border-b">Add New Movie</h2>
 
       <MovieForm
         submitLabel={createMovie.isPending ? "Creating..." : "Create Movie"}

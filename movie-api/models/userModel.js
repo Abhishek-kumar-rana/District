@@ -5,12 +5,17 @@
  *   name: String
  *   email: String         (required, unique)
  *   password: String      (required) -- stored as plain text for local testing only
- *   role: "user" | "admin"  (default: "user")
+ *   role: "user" | "admin" | "superadmin"  (default: "user")
  *   createdAt: String     (ISO date, auto-generated)
  * }
+ *
+ * Role permissions (movies):
+ *   user        -> read only
+ *   admin       -> read + update (edit) movies
+ *   superadmin  -> read + create + update + delete movies
  */
 
-const ROLES = ["user", "admin"];
+const ROLES = ["user", "admin", "superadmin"];
 
 function validateUserInput(body, { isUpdate = false } = {}) {
   const errors = [];

@@ -1,5 +1,4 @@
-import { useState } from "react";
-import type { FormEvent } from "react";
+import { useForm } from "react-hook-form";
 
 export interface MovieFormPayload {
   title: string;
@@ -32,71 +31,71 @@ interface MovieFormProps {
   onSubmit: (payload: MovieFormPayload) => void;
 }
 
-// Simple, uncontrolled-by-libraries form. Languages/genres are entered as
-// comma-separated text and converted to arrays on submit — keeps this
-// component dependency-free (no react-hook-form/zod needed for a basic
-// admin CRUD form).
+
+interface FormValues {
+  title: string;
+  certificate: string;
+  languages: string;  
+  duration: string;
+  releaseDate: string;
+  description: string;
+  genres: string;  
+  bannerImage: string;
+  backgroundImage: string;
+}
+
+const toCsv =   (arr?:string[]) => arr?.join(", ") ?? "";
+const fromCsv = (csv: string) =>
+  csv
+    .split(",")
+    .map((s) => s.trim())
+    .filter(Boolean);
+
 export default function MovieForm({
   initialValues,
   submitLabel,
   isSubmitting,
   onSubmit,
 }: MovieFormProps) {
-  const [title, setTitle] = useState(initialValues?.title ?? "");
-  const [certificate, setCertificate] = useState(initialValues?.certificate ?? "U");
-  const [languages, setLanguages] = useState(
-    initialValues?.languages?.join(", ") ?? ""
-  );
-  const [duration, setDuration] = useState(initialValues?.duration ?? "");
-  const [releaseDate, setReleaseDate] = useState(initialValues?.releaseDate ?? "");
-  const [description, setDescription] = useState(initialValues?.description ?? "");
-  const [genres, setGenres] = useState(initialValues?.genres?.join(", ") ?? "");
-  const [bannerImage, setBannerImage] = useState(initialValues?.bannerImage ?? "");
-  const [backgroundImage, setBackgroundImage] = useState(
-    initialValues?.backgroundImage ?? ""
-  );
+  const { register, handleSubmit } = useForm<FormValues>({
+    defaultValues: {
+      title: initialValues?.title ?? "",
+      certificate: initialValues?.certificate ?? "U",
+      languages: toCsv(initialValues?.languages),
+      duration: initialValues?.duration ?? "",
+      releaseDate: initialValues?.releaseDate ?? "",
+      description: initialValues?.description ?? "",
+      genres: toCsv(initialValues?.genres),
+      bannerImage: initialValues?.bannerImage ?? "",
+      backgroundImage: initialValues?.backgroundImage ?? "",
+    },
+  });
 
-  const handleSubmit = (e: FormEvent) => {
-    e.preventDefault();
+  const submit = (values: FormValues) => {
     onSubmit({
-      title,
-      certificate,
-      languages: languages
-        .split(",")
-        .map((s) => s.trim())
-        .filter(Boolean),
-      duration,
-      releaseDate,
-      description,
-      genres: genres
-        .split(",")
-        .map((s) => s.trim())
-        .filter(Boolean),
-      bannerImage,
-      backgroundImage,
+      ...values,
+      languages: fromCsv(values.languages),
+      genres: fromCsv(values.genres),
     });
   };
 
+  const inputClass =
+    "mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500";
+
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
+    <form onSubmit={handleSubmit(submit)} className="space-y-4">
       <div>
         <label className="block text-sm font-medium text-gray-700">Title</label>
         <input
-          value={title}
-          onChange={(e) => setTitle(e.target.value)}
-          required
-          className="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+          {...register("title", { required: true })}
+          className={inputClass}
           placeholder="Movie title"
         />
       </div>
 
       <div>
         <label className="block text-sm font-medium text-gray-700">Certificate</label>
-        <select
-          value={certificate}
-          onChange={(e) => setCertificate(e.target.value)}
-          className="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
-        >
+        <select {...register("certificate")} className={inputClass}>
           <option value="U">U</option>
           <option value="UA7+">UA7+</option>
           <option value="UA13+">UA13+</option>
@@ -109,41 +108,25 @@ export default function MovieForm({
         <label className="block text-sm font-medium text-gray-700">
           Languages (comma-separated)
         </label>
-        <input
-          value={languages}
-          onChange={(e) => setLanguages(e.target.value)}
-          className="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
-          placeholder="English, Hindi"
-        />
+        <input {...register("languages")} className={inputClass} placeholder="English, Hindi" />
       </div>
 
       <div>
         <label className="block text-sm font-medium text-gray-700">Duration</label>
-        <input
-          value={duration}
-          onChange={(e) => setDuration(e.target.value)}
-          className="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
-          placeholder="2h 05m"
-        />
+        <input {...register("duration")} className={inputClass} placeholder="2h 05m" />
       </div>
 
       <div>
         <label className="block text-sm font-medium text-gray-700">Release Date</label>
-        <input
-          type="date"
-          value={releaseDate}
-          onChange={(e) => setReleaseDate(e.target.value)}
-          className="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
-        />
+        <input type="date" {...register("releaseDate")} className={inputClass} />
       </div>
 
       <div>
         <label className="block text-sm font-medium text-gray-700">Description</label>
         <textarea
-          value={description}
-          onChange={(e) => setDescription(e.target.value)}
+          {...register("description")}
           rows={3}
-          className="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+          className={`${inputClass} [&::-webkit-scrollbar]:hidden`}
           placeholder="Short description"
         />
       </div>
@@ -152,20 +135,14 @@ export default function MovieForm({
         <label className="block text-sm font-medium text-gray-700">
           Genres (comma-separated)
         </label>
-        <input
-          value={genres}
-          onChange={(e) => setGenres(e.target.value)}
-          className="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
-          placeholder="Action, Sci-Fi"
-        />
+        <input {...register("genres")} className={inputClass} placeholder="Action, Sci-Fi" />
       </div>
 
       <div>
         <label className="block text-sm font-medium text-gray-700">Banner Image URL</label>
         <input
-          value={bannerImage}
-          onChange={(e) => setBannerImage(e.target.value)}
-          className="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+          {...register("bannerImage")}
+          className={`${inputClass} pr-5`}
           placeholder="https://..."
         />
       </div>
@@ -175,9 +152,8 @@ export default function MovieForm({
           Background Image URL
         </label>
         <input
-          value={backgroundImage}
-          onChange={(e) => setBackgroundImage(e.target.value)}
-          className="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
+          {...register("backgroundImage")}
+          className={`${inputClass} pr-5`}
           placeholder="https://..."
         />
       </div>
@@ -185,7 +161,7 @@ export default function MovieForm({
       <button
         type="submit"
         disabled={isSubmitting}
-        className="mt-1 p-2 block bg-violet-400 disabled:opacity-50 text-white text-lg w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-violet-500"
+        className="mt-1 p-2 block bg-violet-600 disabled:opacity-50 text-white text-lg w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-violet-500 cursor-pointer"
       >
         {submitLabel}
       </button>

@@ -3,12 +3,15 @@ import { Search } from 'lucide-react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { UserRound } from 'lucide-react';
 import {  useEffect, useState } from 'react';
+import { useAuth } from '../hooks/useAuth';
 
 export default function Header() {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [isSignedIn, setIsSignedIn] = useState(false);
-    const [isAdmin, setIsAdmin] = useState(false);
+    const {getCurrentUser,getPermissions,logout} =useAuth();
+    const permissions=getPermissions();
+    const user=getCurrentUser();
     const navigate=useNavigate();
     const toggleMenu = () => {
 
@@ -17,10 +20,7 @@ export default function Header() {
     }
     const handleSignOut = () => {
         setIsSignedIn(()=>{
-            const user = localStorage.getItem("currentUser");
-
-        
-            if(user) localStorage.removeItem("currentUser");
+            logout();
             
 
             return false;
@@ -49,17 +49,7 @@ export default function Header() {
 
     useEffect(() => {
 
-       const checkadmin=()=>{
-    
-      const currentUser=JSON.parse(localStorage.getItem("currentUser")!);
-      if(currentUser?.role=="admin"){
-        setIsAdmin(true);
-      }
-      
-  }
- 
-        // Check once on mount
-        checkadmin();
+       
          
         const storedUser = localStorage.getItem("currentUser");
         setIsSignedIn(!!storedUser);
@@ -178,8 +168,8 @@ export default function Header() {
                     <div>
                         <div  className="relative flex flex-row items-center gap-6   ">
                             <Search className="w-5  hidden   lg:block h-5 text-[#6444E4] font-bold" />
-                            <div onClick={toggleMenu} className=" w-[40px] h-[40px] bg-gray-300 rounded-full flex items-center justify-center">
-                                <UserRound className="p-1 text-white" />
+                            <div onClick={toggleMenu} className={`cursor-pointer w-[40px] h-[40px] ${isMenuOpen? "bg-black":"bg-gray-500"}  rounded-full flex items-center justify-center`}>
+                                {isMenuOpen? <span className=' text-xl text-white '>X</span>:<UserRound className="p-1 text-white" />}
                             </div>
                             {isMenuOpen && !isSignedIn && (
                                 <div onClick={handleLoginClick} className=" absolute mt-12 px-4 py-2 border rounded-lg bg-white shadow-md right-0 top-0  z-20 whitespace-nowrap ">
@@ -188,8 +178,9 @@ export default function Header() {
                             )}
                             {isMenuOpen && isSignedIn && (
                                 <div  className="z-20 absolute mt-12 flex flex-col gap-2 px-4 py-2 border rounded-lg bg-white shadow-md right-0 top-0  whitespace-nowrap ">
+                                    <p className=' border-b'>You: {user?.role}</p>
                                     <button onClick={handleSignOut} className="bg-red-600 text-white px-4 py-1.5 rounded-lg font-semibold  lg:block">Sign Out</button>
-                                     {isAdmin && (
+                                     {permissions?.includes("CREATE") && (
                                         <button
                                             onClick={handleAddMovieClick}
                                             className="bg-[#6444E4] text-white px-4 py-1.5 rounded-lg font-semibold  lg:block"

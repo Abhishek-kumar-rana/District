@@ -20,6 +20,11 @@ app.get("/", (req, res) => {
       movies: "/api/movies",
       users: "/api/users",
       login: "/api/users/login",
+      seats: "/api/movies/:id/seats",
+      holdSeats: "POST /api/movies/:id/seats/hold",
+      releaseSeats: "POST /api/movies/:id/seats/release",
+      bookSeats: "POST /api/movies/:id/seats/book",
+      userBookings: "/api/users/:id/bookings",
     },
   });
 });

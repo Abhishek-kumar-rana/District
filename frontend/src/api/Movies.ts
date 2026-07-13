@@ -1,78 +1,62 @@
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
-import axios from "axios";
+import { api } from "./axios";
+import type { ApiResponse, CreateMoviePayload, Movie, UpdateMoviePayload } from "./Movies.type";
+import { saveMovieOffline } from "../offlineDB";
 
-export interface CastMember {
-  id: number;
-  name: string;
-  role: string;
-  image: string;
-}
- 
-export interface Movie {
-  id: number;
-  title: string;
-  certificate: string;
-  languages: string[];
-  duration: string;
-  releaseDate: string;
-  description: string;
-  genres: string[];
-  bannerImage: string;
-  backgroundImage: string;
-  cast: CastMember[];
-}
- 
-export type CreateMoviePayload = Partial<Omit<Movie, "id">> & { title: string };
-export type UpdateMoviePayload = Partial<Omit<Movie, "id">>;
 
-export interface ApiResponse<T> {
-  success: boolean;
-  message: string;
-  count?: number;
-  data: T;
-}
  
 
-const moviesApi = axios.create({
-  baseURL: "http://localhost:5000/api/movies",
-  headers: {
-    "Content-Type": "application/json",
-  },
-});
 
-// Admin actions (create/update/delete) require the acting admin's user id.
-// The backend reads this header and looks up the real role from the DB —
-// it does not trust a role sent by the client.
+ 
 const withAdminHeader = (adminId: string | number) => ({
   headers: { "x-user-id": String(adminId) },
 });
 
 // ---------- READ ----------
 
-export const getMovies = async (params?: {
-  genre?: string;
-  language?: string;
-  certificate?: string;
-  search?: string;
-}): Promise<ApiResponse<Movie[]>> => {
-  const response = await moviesApi.get("", { params });
-  return response.data;
+// export const getMovies = async (params?: {
+//   genre?: string;
+//   language?: string;
+//   certificate?: string;
+//   search?: string;
+// }): Promise<ApiResponse<Movie[]>> => {
+//   const response = await api.get("/api/movies", { params });
+//   return response.data;
+// };
+
+// export const useMovies = (params?: {
+//   genre?: string;
+//   language?: string;
+//   certificate?: string;
+//   search?: string;
+// }) => {
+//   return useQuery({
+//     queryKey: ["movies", params],
+//     queryFn: () => getMovies(params),
+//   });
+// };
+
+// get all movies 
+
+ const getMovies = async () => {
+    const response = await api.get("/api/movies");
+    console.log("Movie API Response:", response.data); 
+    return response.data;
 };
 
-export const useMovies = (params?: {
-  genre?: string;
-  language?: string;
-  certificate?: string;
-  search?: string;
-}) => {
-  return useQuery({
-    queryKey: ["movies", params],
-    queryFn: () => getMovies(params),
-  });
-};
+export const useMovies = () => {
+    return useQuery({
+        queryKey: ['movies'],
+        queryFn: () => getMovies(),
+    });
+};  
+
+
+//// get single movie
+
 
 export const getMovieById = async (id: string | number): Promise<ApiResponse<Movie>> => {
-  const response = await moviesApi.get(`/${id}`);
+  const response = await api.get(`/api/movies/${id}`);
   return response.data;
 };
 
@@ -84,14 +68,73 @@ export const useMovie = (id: string | number) => {
   });
 };
 
+
+//  const getMovie = async (id: string) => {
+//   const response = await api.get(`/api/movies/${id}`);
+//   console.log("API Response:", response.data); 
+//   return response.data;
+// };
+
+
+// export const useData = (id: string) => {
+//   console.log("button clicked");
+//   return useQuery({
+//     queryKey: ['data', id],
+//     queryFn: () => getMovie(id),
+//    })
+// }
+
+
+
+
+
+
+
+
+
 // ---------- CREATE ----------
+
+// export const createMovie = async (
+//   payload: CreateMoviePayload,
+//   adminId: string | number
+// ): Promise<ApiResponse<Movie>> => {
+//   console.log(payload);
+//   const response = await api.post("/api/movies", payload, withAdminHeader(adminId));
+//   return response.data;
+// };
+
 
 export const createMovie = async (
   payload: CreateMoviePayload,
   adminId: string | number
-): Promise<ApiResponse<Movie>> => {
-  const response = await moviesApi.post("", payload, withAdminHeader(adminId));
-  return response.data;
+) => {
+  try {
+    const response = await api.post(
+      "/api/movies",
+      payload,
+      withAdminHeader(adminId)
+    );
+
+    return response.data;
+  } catch (err) {
+     if (!navigator.onLine) {
+      await saveMovieOffline(payload, adminId);
+
+      const registration = await navigator.serviceWorker.ready;
+
+      if ("sync" in registration) {
+        await (registration as any).sync.register("sync-new-movies");
+      }
+
+      return {
+        success: true,
+        message: "Movie saved offline",
+        data: payload,
+      };
+    }
+
+    throw err;
+  }
 };
 
 export const useCreateMovie = () => {
@@ -117,7 +160,7 @@ export const updateMovie = async (
   payload: UpdateMoviePayload,
   adminId: string | number
 ): Promise<ApiResponse<Movie>> => {
-  const response = await moviesApi.put(`/${id}`, payload, withAdminHeader(adminId));
+  const response = await api.put(`/api/movies/${id}`, payload, withAdminHeader(adminId));
   return response.data;
 };
 
@@ -146,7 +189,7 @@ export const deleteMovie = async (
   id: string | number,
   adminId: string | number
 ): Promise<ApiResponse<Movie>> => {
-  const response = await moviesApi.delete(`/${id}`, withAdminHeader(adminId));
+  const response = await api.delete(`/api/movies/${id}`, withAdminHeader(adminId));
   return response.data;
 };
 

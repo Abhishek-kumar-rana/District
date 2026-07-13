@@ -9,13 +9,15 @@ const {
   updateUser,
   deleteUser,
 } = require("../controllers/userController");
-const checkAdmin = require("../middleware/checkAdmin");
+const { requireAdmin } = require("../middleware/checkAdmin");
+const { getUserBookings } = require("../controllers/seatController");
 
 router.get("/", getUsers);
 router.get("/:id", getUserById);
+router.get("/:id/bookings", getUserBookings);
 router.post("/", createUser);
 router.post("/login", loginUser);
 router.put("/:id", updateUser);
-router.delete("/:id", checkAdmin, deleteUser);
+router.delete("/:id", requireAdmin, deleteUser);
 
 module.exports = router;

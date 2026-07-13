@@ -1,8 +1,10 @@
 const { readDB, writeDB, nextId } = require("../utils/db");
 const { validateMovieInput } = require("../models/movieModel");
+const { generateSeats } = require("../models/seatModel");
 
 // GET /api/movies  (supports ?genre=, ?language=, ?search=, ?certificate=)
 function getMovies(req, res) {
+  console.log("this called now",Date.now());
   const { genre, language, search, certificate } = req.query;
   const db = readDB();
 
@@ -52,10 +54,12 @@ function getMovieById(req, res) {
 
 // POST /api/movies  (admin only)
 function createMovie(req, res) {
+  console.log(req.body);
   const errors = validateMovieInput(req.body);
   if (errors.length) {
     return res.status(400).json({ success: false, message: "Validation failed", errors });
   }
+
 
   const db = readDB();
 
@@ -71,6 +75,10 @@ function createMovie(req, res) {
     bannerImage: req.body.bannerImage || "",
     backgroundImage: req.body.backgroundImage || "",
     cast: req.body.cast || [],
+    price: req.body.price || 200,
+    // Auto-generate the seat map the moment the movie is created.
+    // Optionally override the layout with body.rows / body.seatsPerRow.
+    seats: generateSeats(5,10),
   };
 
   db.movies.push(newMovie);
@@ -81,6 +89,7 @@ function createMovie(req, res) {
 
 // PUT /api/movies/:id  (admin only)
 function updateMovie(req, res) {
+  console.log("update movie ic called now");
   const errors = validateMovieInput(req.body, { isUpdate: true });
   if (errors.length) {
     return res.status(400).json({ success: false, message: "Validation failed", errors });
@@ -93,7 +102,11 @@ function updateMovie(req, res) {
     return res.status(404).json({ success: false, message: "Movie not found" });
   }
 
-  db.movies[index] = { ...db.movies[index], ...req.body, id: db.movies[index].id };
+  // Seats are managed only through the /seats hold-release-book endpoints,
+  // never via a general movie edit — strip them out if present in the body.
+  const { seats, ...safeUpdates } = req.body;
+
+  db.movies[index] = { ...db.movies[index], ...safeUpdates, id: db.movies[index].id };
   writeDB(db);
 
   res.json({ success: true, message: "Movie updated successfully", data: db.movies[index] });

@@ -13,17 +13,7 @@ const carouselRef2 = useRef<HTMLDivElement>(null);
     const [parkIndex, setParkIndex] = useState(0);
     const [artistIndex, setArtistIndex] = useState(0);
 
-    const next = (currentIndex: number,setIndex: React.Dispatch<React.SetStateAction<number>>,array: any[],limit: number) => {
-        if (currentIndex < array.length - limit) {
-            setIndex(currentIndex + 1);
-        }
-    };
-
-    const prev = (currentIndex: number,setIndex: React.Dispatch<React.SetStateAction<number>>) => {
-        if (currentIndex > 0) {
-            setIndex(currentIndex - 1);
-        }
-    };
+ 
 
     const MoveNext = () => {
   carouselRef.current?.scrollBy({

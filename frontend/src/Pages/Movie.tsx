@@ -1,44 +1,32 @@
-import { useEffect, useState } from 'react'
+ 
 
-
-import { useData } from '../api/api';
-import { useParams, NavLink } from 'react-router-dom';
+ import { useParams, NavLink } from 'react-router-dom';
+import { useAuth } from '../hooks/useAuth';
+import { useMovie } from '../api/Movies';
 
 
 function Movie() {
   
 
-  const [isadmin,setIsadmin]=useState(false);
+  const {getPermissions, getCurrentUser}=useAuth();
+  const permissions=getPermissions();
 
   const { id } = useParams<{ id: string }>();
 
 
-  const { data, isLoading, error } = useData(id!);
+  const { data, isLoading, error } = useMovie(id!);
 
-
+  console.log(getCurrentUser());
   
-  const checkadmin=()=>{
-    
-      const currentUser=JSON.parse(localStorage.getItem("currentUser")!);
-      if(currentUser?.role=="admin"){
-        setIsadmin(true);
-      }
-      
-  }
-  useEffect(()=>{
-    console.log("haefaef")
+  
 
-      checkadmin();
+  if (isLoading) return <h2 className='h-screen mt-60'>Loading...</h2>;
 
-  },[]);
-
-  if (isLoading) return <h2>Loading...</h2>;
-
-  if (error) return <h2>Something went wrong</h2>;
+  if (error) return <h2 className='h-screen mt-60'>Something went wrong</h2>;
 
   return (
     <>
-    <div className=" mt-30 md:mt-40 lg:mt-20 mb-100  ">
+    <div className=" mt-30 md:mt-40 lg:mt-20 mb-100 h-screen ">
       
       <div className="h-[20rem] lg:h-[30rem] md:h-[30rem]   relative  gap-4 flex justify-evenly items-center bg-cover content-fit bg-center "
   style={{
@@ -81,10 +69,17 @@ function Movie() {
              
 
              <div className='flex flex-col gap-7 w-full'>
-                <div>
+                {getCurrentUser()?.role==="user"? (<>
+                <NavLink to={`/movie/${id}/booking`}>
                 <span className=' cursor-pointer text-lg border w-full px-6 py-2 bg-white text-black text-center font-bold rounded-lg'>Book Tickets</span>
-             </div>
-             {isadmin && (
+             </NavLink>
+                </>):("")}
+                {getCurrentUser()===null ? (<>
+                <NavLink to={`/loginSignUp`}>
+                <span className=' cursor-pointer text-sm border-b w-full px-6 py-2  text-white text-center '>Login to book tickets</span>
+             </NavLink>
+                </>):("")}
+             {permissions?.includes("UPDATE") && (
                <NavLink to={`/movies/${id}/edit`}>
                  <span className=' cursor-pointer text-lg w-full  px-9 py-2 bg-red-500 text-white text-center font-bold rounded-lg'>Edit movie</span>
                </NavLink>
