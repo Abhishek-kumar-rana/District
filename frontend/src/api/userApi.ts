@@ -12,7 +12,18 @@ export interface User {
   role: "user" | "admin"|"superadmin";
   createdAt: string;
 }
+// `/api/users/${id}/bookings`
 
+const substitute={
+  "api":{
+    "users":{
+      "login":"/api/users/login",
+      "id":(id:string|Number)=>`/api/users/${id}/bookings`,
+      
+    }
+
+  }
+}
 
 
  
@@ -30,7 +41,7 @@ export interface User {
 
  
 export const loginReq = async (payload:{email:string,password:string}): Promise<ApiResponse<User>> => {
-  const response = await api.post("/api/users/login", payload);
+  const response = await api.post(substitute.api.users.login, payload);
   console.log("login api response : ",response);
   return response.data;
 };
@@ -64,7 +75,7 @@ export const useRegisterUser = () => {
 ////////// Get Bookings
 
  const getBookings = async (id:string|Number|undefined) => {
-    const response = await api.get(`/users/${id}/bookings`);
+    const response = await api.get(substitute.api.users.id(id!));
     console.log("Movie API Response:", response.data); 
     return response.data;
 };
