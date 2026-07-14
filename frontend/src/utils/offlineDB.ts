@@ -33,3 +33,34 @@ export async function saveMovieOffline(movie: any, adminId: number | string) {
 
   return tx.commit;
 }
+
+export const getPendingMovies =async ()=> {
+  const db = await openDB();
+
+  return new Promise<any[]>((resolve, reject) => {
+    const tx = db.transaction(STORE_NAME, "readonly");
+
+    const request = tx.objectStore(STORE_NAME).getAll();
+
+    request.onsuccess = () => resolve(request.result);
+
+    request.onerror = () => reject(request.error);
+  });
+}
+
+
+
+export const deletePendingMovie= async(id: number)=> {
+  const db = await openDB();
+
+  return new Promise<void>((resolve, reject) => {
+    const tx = db.transaction(STORE_NAME, "readwrite");
+
+    tx.objectStore(STORE_NAME).delete(id);
+
+    tx.oncomplete = () => resolve();
+
+    tx.onerror = () => reject(tx.error);
+  });
+}
+

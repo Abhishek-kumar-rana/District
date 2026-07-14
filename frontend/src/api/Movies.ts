@@ -1,7 +1,7 @@
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { api } from "./axios";
 import type { ApiResponse, CreateMoviePayload, Movie, UpdateMoviePayload } from "./Movies.type";
-import { saveMovieOffline } from "../offlineDB";
+import { saveMovieOffline } from "../utils/offlineDB";
 
 
 

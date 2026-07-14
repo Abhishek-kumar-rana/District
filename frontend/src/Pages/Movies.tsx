@@ -1,14 +1,34 @@
  
 
+import { useEffect, useState } from 'react';
 import {  useMovies } from '../api/Movies';
 import { NavLink } from 'react-router-dom';
+import { deletePendingMovie, getPendingMovies } from '../utils/offlineDB';
 
 
 function Movies() {
+
+  const [pendingMovies, setPendingMovies] = useState<any[]>([]);
+
+  async function loadPendingMovies() {
+     const data = await getPendingMovies(); 
+     console.log("Pending Movies:", data); 
+     setPendingMovies(data); 
+    }
  
+  useEffect(() => { 
+    console.log("useEffect ran"); 
+    loadPendingMovies(); 
+  }, []);
 
   const { data, isLoading, error } = useMovies();
+const handleDeletePendingMovie = async (id: number) => {
+  await deletePendingMovie(id);
 
+  setPendingMovies((prev) =>
+    prev.filter((movie) => movie.id !== id)
+  );
+};
   console.log("Movies Data:", data);
   
   if (isLoading) return <h2 className='h-screen mt-50 text-4xl'>Loading...</h2>;
@@ -20,6 +40,67 @@ function Movies() {
     <div className=" mt-30 md:mt-40 lg:mt-20 mb-100  ">
       
        <div className="lg:max-w-7xl mx-auto  pt-8   ">
+              <div>
+                  {pendingMovies.length > 0 && (
+
+            <div className="mb-12 rounded-2xl border mt-10 lg:mt-0    p-6">
+
+              <h2 className="mb-5  font-bold  ">
+
+                Pending Offline Movies
+
+              </h2>
+
+              <div className="space-y-4">
+
+                {pendingMovies.map((item) => (
+
+                  <div
+                    key={item.id}
+                    className="flex items-center justify-between rounded-xl bg-white p-4 shadow"
+                  >
+
+                    <div>
+
+                      <h3 className="font-bold text-lg">
+
+                        {item.movie.title}
+
+                      </h3>
+
+                      <p className="text-sm text-gray-500">
+
+                        Saved locally
+
+                      </p>
+
+                      <p className="text-xs text-yellow-600">
+
+                        Will sync automatically
+
+                      </p>
+
+                    </div>
+
+                    <button
+                      onClick={() => handleDeletePendingMovie(item.id)}
+                      className="rounded-lg bg-red-500 px-4 py-2 text-white hover:bg-red-600"
+                    >
+
+                      Delete
+
+                    </button>
+
+                  </div>
+
+                ))}
+
+              </div>
+
+            </div>
+
+          )}
+              </div>
                           <div  >
                               <p className="text-2xl mt-10 pl-2 font-bold">Top movies near you</p>
                           </div>
@@ -62,3 +143,16 @@ function Movies() {
 }
 
 export default Movies
+
+
+
+
+
+
+
+
+
+
+
+
+
